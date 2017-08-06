@@ -132,16 +132,17 @@ int main()
 	const BigUnsigned n = p*q;
     BigUnsigned totient = LCM(p - 1, q - 1);
 
-	// Note: GCD(e, totient) = 1
-    const BigUnsigned e = stringToBigUnsigned("17");
+	// Note: GCD(e, totient) must equal 1
+    const BigUnsigned e = stringToBigUnsigned("65537");
     const BigUnsigned d = modinv(e, totient);
-
+    
 	cout << "p = " << p << endl;
 	cout << "q = " << q << endl;
 	cout << "n = " << n << endl;
 	cout << "totient = " << totient << endl;
 	cout << "e = " << e << endl;
 	cout << "d = " << d << endl;
+    cout << "GCD(e, totient) = " << GCD(e, totient) << endl;
 
 
 	if(plaintext >= n)
