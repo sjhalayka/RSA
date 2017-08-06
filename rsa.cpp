@@ -124,6 +124,8 @@ int main()
 
 //	cout << "Plaintext = " << plaintext << endl;
 
+    // https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Example
+    
 
 	// 200 digit prime numbers
 	// http://primes.utm.edu/lists/small/small2.html
@@ -153,7 +155,7 @@ int main()
 	
 	if(e >= totient)
 	{
-		cout << "e should be less than totient (p - 1)*(q -1)" << endl;
+		cout << "e should be less than totient" << endl;
 		return -1;
 	}
 
