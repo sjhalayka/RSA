@@ -132,10 +132,9 @@ int main()
 	const BigUnsigned n = p*q;
     BigUnsigned totient = LCM(p - 1, q - 1);
 
-	// greatest_common_divisor(e, totient) = 1
-	const BigUnsigned e = stringToBigUnsigned("17"); // 5 digits
+	// Note: GCD(e, totient) = 1
+    const BigUnsigned e = stringToBigUnsigned("17");
     const BigUnsigned d = modinv(e, totient);
-
 
 	cout << "p = " << p << endl;
 	cout << "q = " << q << endl;
