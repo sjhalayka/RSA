@@ -141,13 +141,13 @@ int main()
     const BigUnsigned e = stringToBigUnsigned("65537");
     const BigUnsigned d = modinv(e, totient);
     
-	cout << "p = " << p << endl;
-	cout << "q = " << q << endl;
-	cout << "n = " << n << endl;
-	cout << "totient = " << totient << endl;
-	cout << "e = " << e << endl;
-	cout << "d = " << d << endl;
-    cout << "GCD(e, totient) = " << GCD(e, totient) << endl;
+	//cout << "p = " << p << endl << endl;
+	//cout << "q = " << q << endl << endl;
+	//cout << "n = " << n << endl << endl;
+	//cout << "totient = " << endl << totient << endl;
+	//cout << "e = " << e << endl << endl;
+	//cout << "d = " << d << endl << endl;
+ //   cout << "GCD(e, totient) = " << GCD(e, totient) << endl << endl;
 
 	if (GCD(p, q) != stringToBigUnsigned("1"))
 	{
